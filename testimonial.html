@@ -89,140 +89,159 @@
 <section class="page-header padding">
 <div class="container">
 <div class="page-content text-center">
-<h2>Clients reviews</h2>
+<h2>Clients</h2>
 <p>Fabtechs Enterprises</p>
 </div>
 </div>
 </section>
-<section class="testimonial-section bg-grey padding">
-<div class="dots"></div>
-<div class="container">
-<div class="section-heading text-center mb-40 wow fadeInUp" data-wow-delay="100ms">
-<span>Testimonial</span>
-<h2>What people says</h2>
-</div>
-<div id="testimonial-carousel" class="testimonial-carousel box-shadow owl-carousel">
-<div class="testi-item d-flex align-items-center">
-<img src="img/c2.avif" alt="img">
-<div class="testi-content">
-<p>"Thank you for guiding us through the construction process, understanding, and always ready to accommodate our needs. We love our new space and know that it was built by the very best!"</p>
-<h3>Kyle Frederick</h3>
-<ul class="rattings">
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-</ul>
-<span>Director</span>
-</div>
-<i class="fa fa-quote-right"></i>
-</div>
-<div class="testi-item d-flex align-items-center">
-<img src="img/c1.avif" alt="img">
-<div class="testi-content">
-<p>"Thank you for guiding us through the construction process, understanding, and always ready to accommodate our needs. We love our new space and know that it was built by the very best!"</p>
-<h3>Valentin Lacoste</h3>
-<ul class="rattings">
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-</ul>
-<span>Director</span>
-</div>
-<i class="fa fa-quote-right"></i>
-</div>
-<div class="testi-item d-flex align-items-center">
-<img src="img/c1.avif" alt="img">
-<div class="testi-content">
-<p>"Thank you for guiding us through the construction process, understanding, and always ready to accommodate our needs. We love our new space and know that it was built by the very best!"</p>
-<h3>José Carpio</h3>
-<ul class="rattings">
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-<li><i class="fa fa-star"></i></li>
-</ul>
-<span>Director</span>
-</div>
-<i class="fa fa-quote-right"></i>
-</div>
-</div>
-</div>
+<section class="sponsor-section bg-grey">
+    <div class="container">
+        <div class="sponsor-grid">
+            <div class="sponsor-item"><img src="img/co1.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co2.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co3.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co4.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co5.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co6.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co7.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co8.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co9.png" alt="sponsor"></div>
+            <div class="sponsor-item"><img src="img/co10.png" alt="sponsor"></div>
+        </div>
+    </div>
 </section>
-<div class="sponsor-section bg-grey">
-<div class="dots"></div>
-<div class="container">
-<div id="sponsor-carousel" class="sponsor-carousel owl-carousel">
-<div class="sponsor-item">
-<img src="img/co1.png" alt="sponsor">
-</div>
-<div class="sponsor-item">
-<img src="img/co2.png" alt="sponsor">
-</div>
-<div class="sponsor-item">
-<img src="img/co3.png" alt="sponsor">
-</div>
-<div class="sponsor-item">
-<img src="img/co4.png" alt="sponsor">
-</div>
-<div class="sponsor-item">
-<img src="img/co5.png" alt="sponsor">
-</div>
-<div class="sponsor-item">
-<img src="img/co6.png" alt="sponsor">
-</div>
-<div class="sponsor-item">
-<img src="img/co7.png" alt="sponsor">
- </div>
-<div class="sponsor-item">
-<img src="img/co8.png" alt="sponsor">
-</div>
-</div>
-</div>
-</div>
+
+<style>
+    .sponsor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        justify-items: center;
+        align-items: center;
+        padding: 50px 0;
+    }
+    .sponsor-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    }
+    .sponsor-item img {
+        max-width: 150px;
+        transition: transform 0.4s ease-in-out;
+    }
+    .sponsor-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .sponsor-item:hover img {
+        transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+        .sponsor-grid {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .sponsor-item img {
+            max-width: 120px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .sponsor-grid {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        .sponsor-item img {
+            max-width: 100px;
+        }
+    }
+</style>
 <section class="widget-section padding">
-<div class="container">
-<div class="row">
-<div class="col-lg-3 col-sm-6 sm-padding">
-<div class="widget-content">
-<a href="#"><img src="img/fabtechs-logo.png" alt="brand"></a>
-<p>STRUCTURE FABRICATION | ERECTION | PAINTING & ROOF SHEET.</p>
-</div>
-</div>
-<div class="col-lg-2 col-sm-6 sm-padding">
-<div class="widget-content">
-<h4>FABTECHS ENTERPRISES</h4>
-<ul class="widget-links">
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="projects.html">Product Gallery</a></li>
-<li><a href="testimonial.html">Clients</a></li>
-<li><a href="contact.html">Contact Us</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 sm-padding">
-<div class="widget-content">
-<h4>LOCATE US</h4>
-<p>GF 34, Krishna Complex, Near Rajpipla Chokadi GIDC Ankleshwar-393002</p>
-<span><a href="mailto:work@fabtechs.co.in ">work@fabtechs.co.in</a></span>
-<span>(+91) 9427003687</span>
-<span>(+91) 9429282598</span>
-</div>
-</div>
-<div class="col-lg-4 col-sm-6 sm-padding">
-</div>
-</div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 sm-padding">
+                <div class="widget-content">
+                    <a href="#"><img src="img/fabtechs-logo.png" alt="brand"></a>
+                    <p>STRUCTURE FABRICATION | ERECTION | PAINTING & ROOF SHEET.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 sm-padding">
+                <div class="widget-content">
+                    <h4>FABTECHS ENTERPRISES</h4>
+                    <ul class="widget-links">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="projects.html">Product Gallery</a></li>
+                        <li><a href="testimonial.html">Clients</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 sm-padding">
+                <div class="widget-content">
+                    <h4>LOCATE US</h4>
+                    <p>GF 34, Krishna Complex, Near Rajpipla Chokadi GIDC Ankleshwar-393002</p>
+                    <span><a href="mailto:work@fabtechs.co.in">work@fabtechs.co.in</a></span>
+                    <span>(+91) 9427003687</span>
+                    <span>(+91) 9429282598</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 sm-padding">
+                <div class="widget-content social-media">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons" id="social-icons">
+                        <!-- Icons will be loaded dynamically with JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 <footer class="footer-section align-center">
-<div class="container">
-<p><a href="#">© 2025 Fabtechs Enterprises. All rights reserved.</a></p>
-</div>
+    <div class="container">
+        <p><a href="#">© 2025 Fabtechs Enterprises. All rights reserved.</a></p>
+    </div>
 </footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const socialIcons = document.getElementById("social-icons");
+        socialIcons.innerHTML = `
+            <a href="https://www.instagram.com/fabtechs_enterprises/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1CFJEQY5ez/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://wa.me/9427003687" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        `;
+    });
+</script>
+
+<style>
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .social-icons a {
+        font-size: 34px;
+        color: #f39c00;
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .social-icons a:hover {
+        color: #007bff;
+        transform: scale(2.1);
+    }
+</style>
 <a data-scroll href="#" id="scroll-to-top"><i class="arrow_carrot-up"></i></a>
 
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor/jquery-1.12.4.min.js"></script>
