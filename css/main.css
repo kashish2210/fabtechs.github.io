@@ -272,3 +272,36 @@ html, body {
 .container {
     flex-grow: 1;
 }
+@media (max-width: 768px) {
+    .header-right12 {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-right12 {
+        color: #000; /* Dark Black */
+    }
+}
+
+.header-logo {
+    gap: 20px;
+}
+
+.header-logo .texty {
+    font-size: 1.1rem; /* Reduce font size slightly */
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if text is too long */
+}
+
+.header-logo img {
+    width: 40px; /* Reduce logo size slightly */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .header-logo .texty {
+        font-size: 0.8rem; /* Even smaller on mobile */
+    }
+}
