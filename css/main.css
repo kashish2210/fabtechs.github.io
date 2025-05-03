@@ -305,3 +305,47 @@ html, body {
         font-size: 0.8rem; /* Even smaller on mobile */
     }
 }
+.logo {
+    width: 45px !important;
+    height: auto !important;
+    flex-shrink: 0;
+    max-width: none !important;
+    transform: scale(1.5);
+}
+
+.logo img,
+img.logo {
+    width: 45px !important;
+    height: auto !important;
+    max-width: none !important;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto !important;
+    overflow: visible !important;
+    min-width: 100px !important;
+}
+
+.logo svg {
+    width: 80px !important;
+    height: auto !important;
+}
+
+.texty {
+    position: static;
+    font-size: 18px;
+    color: #000 !important;
+    font-weight: bold;
+    white-space: normal;
+    text-overflow: unset;
+    overflow: visible;
+    max-width: none;
+    padding: 0 10px;
+}
+
+.primary-header .header-logo {
+    max-width: none !important;
+}
